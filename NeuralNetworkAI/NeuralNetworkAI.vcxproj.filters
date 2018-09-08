@@ -13,10 +13,174 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{7779137a-9c66-42db-85f1-8388c8649159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects">
+      <UniqueIdentifier>{d8a85fd3-52cb-4a36-aafa-e41c469b0411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects\Units">
+      <UniqueIdentifier>{742e6cd2-72dd-4e1f-abf3-ba59f1046644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects\Buildings">
+      <UniqueIdentifier>{99af9ded-336f-4948-9413-fba9457298cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AI">
+      <UniqueIdentifier>{759eba44-fa58-45e8-ab50-c7d71c2225ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{d4c84d9a-3b0b-4643-81b4-fb3325ba1cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects">
+      <UniqueIdentifier>{0bf91427-2ba3-498f-84c4-323b6cd29020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AI">
+      <UniqueIdentifier>{14d94a1b-33bf-418a-a094-e17f516e01ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects\Components">
+      <UniqueIdentifier>{36920c6e-16a1-44a4-900e-5a6b739bea52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects\Units">
+      <UniqueIdentifier>{d1ceae85-f3d6-4c01-b1d5-b9ad5cb7fa94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects\Buildings">
+      <UniqueIdentifier>{2e6a4ad4-7954-4df1-b6aa-6de59d873a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects\Misc objects">
+      <UniqueIdentifier>{17365361-2526-4afc-a7ae-b85803fdf860}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="cursor.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="infantry.cpp">
+      <Filter>Source Files\GameObjects\Units</Filter>
+    </ClCompile>
+    <ClCompile Include="speeder.cpp">
+      <Filter>Source Files\GameObjects\Units</Filter>
+    </ClCompile>
+    <ClCompile Include="tank.cpp">
+      <Filter>Source Files\GameObjects\Units</Filter>
+    </ClCompile>
+    <ClCompile Include="barracks.cpp">
+      <Filter>Source Files\GameObjects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="base.cpp">
+      <Filter>Source Files\GameObjects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>Source Files\GameObjects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="outpost.cpp">
+      <Filter>Source Files\GameObjects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="refinery.cpp">
+      <Filter>Source Files\GameObjects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="resource.cpp">
+      <Filter>Source Files\GameObjects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="tower.cpp">
+      <Filter>Source Files\GameObjects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="FuzzySystem.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="computer.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buildRadiusComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="buttonComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="combatComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="graphicsComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="movementComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceProducerComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="spawnerComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="selectableComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="transformComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="infantry.h">
+      <Filter>Header Files\GameObjects\Units</Filter>
+    </ClInclude>
+    <ClInclude Include="tank.h">
+      <Filter>Header Files\GameObjects\Units</Filter>
+    </ClInclude>
+    <ClInclude Include="speeder.h">
+      <Filter>Header Files\GameObjects\Units</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="barracks.h">
+      <Filter>Header Files\GameObjects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="base.h">
+      <Filter>Header Files\GameObjects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="basicTower.h">
+      <Filter>Header Files\GameObjects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="outpost.h">
+      <Filter>Header Files\GameObjects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="refinery.h">
+      <Filter>Header Files\GameObjects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="tower.h">
+      <Filter>Header Files\GameObjects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="spending.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="computer.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="FuzzySystem.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="gameObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="button.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="cursor.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\GameObjects\Misc objects</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

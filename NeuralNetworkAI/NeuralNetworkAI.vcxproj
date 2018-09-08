@@ -69,19 +69,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..\..\SFML-2.4.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\SFML-2.4.2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\SFML-2.5.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\SFML-2.5.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>..\..\SFML-2.4.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\SFML-2.4.2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\SFML-2.5.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\SFML-2.5.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\SFML-2.4.2\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\SFML-2.5.0\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -98,7 +98,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\SFML-2.4.2\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\SFML-2.5.0\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -119,7 +119,51 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="barracks.cpp" />
+    <ClCompile Include="base.cpp" />
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="computer.cpp" />
+    <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="FuzzySystem.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="infantry.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="outpost.cpp" />
+    <ClCompile Include="refinery.cpp" />
+    <ClCompile Include="resource.cpp" />
+    <ClCompile Include="speeder.cpp" />
+    <ClCompile Include="tank.cpp" />
+    <ClCompile Include="tower.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="barracks.h" />
+    <ClInclude Include="base.h" />
+    <ClInclude Include="basicTower.h" />
+    <ClInclude Include="buildRadiusComponent.h" />
+    <ClInclude Include="button.h" />
+    <ClInclude Include="buttonComponent.h" />
+    <ClInclude Include="combatComponent.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="computer.h" />
+    <ClInclude Include="cursor.h" />
+    <ClInclude Include="FuzzySystem.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="gameObject.h" />
+    <ClInclude Include="graphicsComponent.h" />
+    <ClInclude Include="infantry.h" />
+    <ClInclude Include="movementComponent.h" />
+    <ClInclude Include="outpost.h" />
+    <ClInclude Include="refinery.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resourceProducerComponent.h" />
+    <ClInclude Include="selectableComponent.h" />
+    <ClInclude Include="spawnerComponent.h" />
+    <ClInclude Include="speeder.h" />
+    <ClInclude Include="spending.h" />
+    <ClInclude Include="tank.h" />
+    <ClInclude Include="tower.h" />
+    <ClInclude Include="transformComponent.h" />
+    <ClInclude Include="Utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
