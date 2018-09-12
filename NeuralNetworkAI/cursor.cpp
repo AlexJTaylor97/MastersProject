@@ -14,7 +14,7 @@ Cursor::~Cursor() {
 
 }
 
-void Cursor::draw(RenderTarget &target, RenderStates states)const {
+void Cursor::draw(sf::RenderTarget &target, sf::RenderStates states)const {
 	if (placingBuilding) {
 		target.draw(buildingGhost);
 	}

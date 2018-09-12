@@ -2,7 +2,6 @@
 #define TANK_H
 
 #include <SFML/Graphics.hpp>
-#include "unit.h"
 #include <iostream>
 //tank statistics
 const int tankHealth = 50.0f;

@@ -4,7 +4,6 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-using namespace sf;
 
 namespace building{
 	enum building { bldRefinery, bldBarracks, bldTower, bldOutpost };
@@ -25,7 +24,7 @@ public:
 	Cursor();
 	~Cursor();
 
-	void draw(RenderTarget &target, RenderStates states)const;		//draws either a building ghost or selection box
+	void draw(sf::RenderTarget &target, sf::RenderStates states)const;		//draws either a building ghost or selection box
 	void update(float dt, sf::Vector2f mousePosition);		//updates the cursors values
 
 	void placeBuilding(sf::RectangleShape buildingIn);			//prompts the cursor to place a building
@@ -41,7 +40,7 @@ public:
 	building::building getSelectedBuilding() { return selectedBuilding; };	//returns selected building
 
 	sf::Vector2f getBoxPosition();			//returns the selection boxes position
-	sf::Vector2f getBoxHalfExtents();		//returns teh selection boxes half extents
+	sf::Vector2f getBoxHalfExtents();		//returns the selection boxes half extents
 };
 
 #endif

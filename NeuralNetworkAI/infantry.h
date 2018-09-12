@@ -2,7 +2,6 @@
 #define INFANTRY_H
 
 #include <SFML/Graphics.hpp>
-#include "unit.h"
 
 #include <iostream>
 //infantry statistics

@@ -2,7 +2,6 @@
 #define SPEEDER_H
 
 #include <SFML/Graphics.hpp>
-#include "unit.h"
 #include <iostream>
 
 //speeder statistics
